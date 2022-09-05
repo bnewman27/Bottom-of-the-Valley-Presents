@@ -8,6 +8,12 @@ html, body {
 	background-color: (242, 225, 199);
 
 }
+/* link camo begin */
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+/* link camo end */
 html, head {
   background-color: #000000;
 }
@@ -43,6 +49,19 @@ h2 {
 	color: rgb(235, 154, 111);
   cursor: crosshair;
 }
+
+.home {
+  text-decoration: none;
+  font-family: 'cooper-black-std', serif;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+	line-height: 25px;
+  letter-spacing: -0.95px;
+  color: #EB9A6F;
+	color: rgb(235, 154, 111);
+  
+  }
 
 /* botm-001 { display: block;
   margin-left: auto;
@@ -167,17 +186,21 @@ $brandText: #EB9A6F; */
   transform: translate(-60%,-30%);
 }
 
-/* mail to begin */
+
+/* mail to  */
 .mailtoform {
   display:inline;
   align-items: center;
 }
-/* mail to end */
 
 
+/* form styling  */
+id="formButtons"
+id="mailtoform"
+id="formText"
+ 
 
 
-/* new nav end */
 
 /* ul {
   background:black;

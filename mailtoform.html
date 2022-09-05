@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://use.typekit.net/dvs7lub.css">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="/style.css" rel="stylesheet" type="text/css" />
   </a>
   
   <!--   // cursor start -->
@@ -17,14 +17,14 @@
   </script>
      <style>       
       a{
-          cursor: url("http://www.rw-designer.com/cursor-extern.php?id=101854"), url("pa_716_a.ani"), default;
+        cursor: url("http://www.rw-designer.com/cursor-extern.php?id=101854"), url("pa_716_a.ani"), default;
       }
   </style>
   <!--  cursor end -->
   
   
   <title>Bottom of the Valley Presents...</title>
-  <a href="/index.html"></a><h1>Bottom of the Valley Presents...</h1>
+  <a href="/index.html"><h1>Bottom of the Valley Presents...</h1></a>
    
      
   </head>
@@ -40,40 +40,46 @@
   </div>
   <nav class="nav" id="nav">
     <ul>
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/events.html">Events</a></li>
-      <li><a href="/shop.html">Shop</a></li>
+      <li><a href="https://bnewman27.github.io//index.html">Home</a></li>
+      <li><a href="https://bnewman27.github.io//events.html">Events</a></li>
+      <li><a href="https://bnewman27.github.io//shop.html">Shop</a></li>
       <li><a href="https://www.instagram.com/bottomofthevalleypresents/">Instagram</a></li>
       <li><a href="https://www.facebook.com/bottomofthevalleypresents">Facebook</a></li>
-      <li><a href="/mailtoform.html">Email</a></li>
+      <li><a href="https://bnewman27.github.io//mailtoform.html">Email</a></li>
+     
     </ul>
+
+    
+   
+
   </nav>
 </div>
+
 <div class="menu-bg" id="menu-bg"></div>
-<hr>
+
 <!-- menu end -->
 
 <br>
     
-    <form action="mailto:bottomofthevalleymedia@gmail.com" method="get" enctype="text/plain">
+    <form action="mailto:bottomofthevalleymedia@gmail.com" method="get" enctype="text/plain" id="form">
       <div>
-        <label for="name">Name:
+        <label for="name" id="formText">Name:
           <input type="text" name="name" id="mailtoform" />
         </label>
       </div>
       <div>
-        <label for="email">Email:
+        <label for="email" id="formText">Email:
           <input type="text" name="email" id="mailtoform" />
         </label>
       </div>
       <div>
         <label>Comments:</label>
         <br />
-        <textarea name="comments" rows="12" cols="35">Send your comments to us.</textarea>
+        <textarea name="comments" id="formText" rows="12" cols="35">Send your comments to us.</textarea>
       </div>
       <div>
-        <input type="submit" name="submit" value="Send" />
-        <input type="reset" name="reset" value="Clear Form" />
+        <input type="submit" name="submit" value="Send"id="formButtons" />
+        <input type="reset" name="reset" value="Clear Form" id="formButtons" />
       </div>
     </form>
   </body>
