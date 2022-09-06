@@ -27,6 +27,7 @@ h1 {font-family: 'cooper-black-std', serif;
 	color: rgb(235, 154, 111);
   text-shadow: ghostwhite 10px;
  
+ 
 
 }
 
@@ -99,10 +100,10 @@ $brandText: #EB9A6F; */
 .bar {
   height: 5px;
   width: 100%;
-  background-color: #EB9A6F;
+  background-color: #DE6E4D;
   display: block;
   border-radius: 5px;
-  transition: 0.3s ease;
+  transition: 0.015s ease;
 }
 
 #bar1 {
@@ -114,7 +115,7 @@ $brandText: #EB9A6F; */
 }
 
 .nav {
-  transition: 0.3s ease;
+  transition: 4s ease;
   display: none;
 }
 
@@ -147,7 +148,7 @@ $brandText: #EB9A6F; */
 .menu-bg, #menu {
   top: 0;
   left: 0;
-  position: absolute;
+  position: sticky;
 }
 
 .menu-bg {
@@ -158,8 +159,8 @@ $brandText: #EB9A6F; */
   background: radial-gradient(circle, #DE6E4D,#EB9A6F);
   border-radius: 60%;
   transition: 0.3s ease;
+  position:sticky;
 }
-
 .change {
   display: block;
 }
@@ -183,22 +184,50 @@ $brandText: #EB9A6F; */
 .change-bg {
   width: 572px;
   height: 506px;
-  transform: translate(-60%,-30%);
+  transform: translateY(-400px)
+ 
 }
 
 
 /* mail to  */
-.mailtoform {
-  display:inline;
-  align-items: center;
-}
+
 
 
 /* form styling  */
-id="formButtons"
-id="mailtoform"
-id="formText"
+.formButtons {
+  font-family: 'cooper-black-std', serif;
+  font-weight: 400;
+  font-style: italic;
+	line-height: 17.5px;
+  letter-spacing: -0.95px;
+  
+}
+
+.mailtoForm {
+  font-family: 'cooper-black-std', serif;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+	line-height: 17.5px;
+  letter-spacing: -0.95px;
+  align-items:center;
+  display:block;
+}
+
+.formtext {
+  font-family: 'cooper-black-std', serif;
+  font-weight: 400;
+  font-style: italic;
+	line-height: 17.5px;
+  letter-spacing: -0.95px;
  
+}
+
+
+/* id="formButtons"
+id="mailtoForm"
+id="formText"
+  */
 
 
 
@@ -230,3 +259,102 @@ a {
 	line-height: 25px;
   letter-spacing: -0.95px;
 } */
+
+/* brand color start */
+/* $brandBackground: #F2E1C7; 
+$brandText: #EB9A6F; */
+/* $brandRed: #BD381F; */
+/* $brandNavy: #14546D; */
+/* $brandOrange:#DE6E4D; */
+/* $brandTan:#EEB486; */
+/* brand color end */
+
+/* Checkout begin */
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  }
+  
+  .col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  }
+  
+  .col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  }
+  
+  .col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+  padding: 0 16px;
+  }
+  
+  .container {
+  background-color: #F2E1C7;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid #EB9A6F;
+  border-radius: 3px;
+  }
+  
+  input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #EEB486;
+  border-radius: 3px;
+  }
+  
+  label {
+  margin-bottom: 10px;
+  display: block;
+  }
+  
+  .icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+  }
+  
+  .btn {
+  background-color: #EB9A6F;
+  color: #F2E1C7;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  }
+  
+  .btn:hover {
+  background-color: #BD381F;
+  }
+  
+  span.price {
+  float: right;
+  color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+  .row {
+  flex-direction:column-reverse;
+    }
+  .col-25 {
+  margin-bottom: 20px;
+    }
+  }
+
+  /* checkout end */

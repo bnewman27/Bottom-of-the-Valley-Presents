@@ -60,16 +60,16 @@
 <!-- menu end -->
 
 <br>
-    
-    <form action="mailto:bottomofthevalleymedia@gmail.com" method="get" enctype="text/plain" id="form">
+    <!-- form begin -->
+    <form action="mailto:bottomofthevalleymedia@gmail.com" method="get" enctype="text/plain" id="mailtoForm">
       <div>
         <label for="name" id="formText">Name:
-          <input type="text" name="name" id="mailtoform" />
+          <input type="text" name="name"  />
         </label>
       </div>
       <div>
         <label for="email" id="formText">Email:
-          <input type="text" name="email" id="mailtoform" />
+          <input type="text" name="email"  />
         </label>
       </div>
       <div>
@@ -78,9 +78,11 @@
         <textarea name="comments" id="formText" rows="12" cols="35">Send your comments to us.</textarea>
       </div>
       <div>
-        <input type="submit" name="submit" value="Send"id="formButtons" />
+        <input type="submit" name="submit" value="Send" id="formButtons" />
         <input type="reset" name="reset" value="Clear Form" id="formButtons" />
       </div>
     </form>
+    <!-- form end -->
+    
   </body>
 </html>
